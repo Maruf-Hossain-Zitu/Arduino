@@ -170,7 +170,7 @@ digitalWrite(4, HIGH);
   Serial.println("Connecting to server: " + serverName);
 
   if (client.connect(serverName.c_str(), serverPort)) {
-    Serial.println("Connection successful!");    //RandomNerdTutorials
+    Serial.println("Connection successful!");
     String head = "--Zitu\r\nContent-Disposition: form-data; name=\"file\"; filename=\" "+String(image_serial_no)+".jpg\"\r\nContent-Type: image/jpeg\r\n\r\n";
     String tail = "\r\n--Zitu--\r\n";
 
